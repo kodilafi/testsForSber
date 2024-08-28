@@ -1,0 +1,451 @@
+HTTP/1.1 204 No Content
+%Date: Wed, 28 Aug 2024 14:57:30 GMT
+Content-Length: 0
+Connection: keep-alive
+ÑReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724857050&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=LTsCbmLXanB59TWaldSXQVsXCIp4au6PPa5H8C92hDU%3D"}]}
+¨Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724857050&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=LTsCbmLXanB59TWaldSXQVsXCIp4au6PPa5H8C92hDU%3D
+|Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+ Access-Control-Allow-Origin: *
+)Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8ba527758f7dbbda-FRA
+
+HTTP/1.1 404 Not Found
+%Date: Wed, 28 Aug 2024 14:57:31 GMT
+/Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+ÓReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724857051&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=1YqH9SyM6M3bnoPzNUiemZzn%2BXl0JswLevxEB36zIIo%3D"}]}
+ªReporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724857051&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=1YqH9SyM6M3bnoPzNUiemZzn%2BXl0JswLevxEB36zIIo%3D
+|Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+ Access-Control-Allow-Origin: *
+)Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: EXPIRED
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 8ba527789a981e57-FRA
+
+{
+    
+}
+HTTP/1.1 200 OK
+%Date: Wed, 28 Aug 2024 14:57:32 GMT
+/Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+ÕReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724832880&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=mcM8BK3QU%2FIwI3UM7aoahgtWywhNJeSA9P7dU%2F6lTPg%3D"}]}
+¬Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724832880&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=mcM8BK3QU%2FIwI3UM7aoahgtWywhNJeSA9P7dU%2F6lTPg%3D
+|Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+ Access-Control-Allow-Origin: *
++Etag: W/"406-ut0vzoCuidvyMf8arZpMpJ6ZRDw"
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 5551
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 8ba5277f3f78a899-RIX
+Content-Encoding: gzip
+
+{
+    "page": 2,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+
+        {
+            "id": 7,
+1            "email": "michael.lawson@reqres.in",
+%            "first_name": "Michael",
+#            "last_name": "Lawson",
+@            "avatar": "https://reqres.in/img/faces/7-image.jpg"
+        },
+
+        {
+            "id": 8,
+3            "email": "lindsay.ferguson@reqres.in",
+%            "first_name": "Lindsay",
+%            "last_name": "Ferguson",
+@            "avatar": "https://reqres.in/img/faces/8-image.jpg"
+        },
+
+        {
+            "id": 9,
+/            "email": "tobias.funke@reqres.in",
+$            "first_name": "Tobias",
+"            "last_name": "Funke",
+@            "avatar": "https://reqres.in/img/faces/9-image.jpg"
+        },
+
+        {
+            "id": 10,
+/            "email": "byron.fields@reqres.in",
+#            "first_name": "Byron",
+#            "last_name": "Fields",
+A            "avatar": "https://reqres.in/img/faces/10-image.jpg"
+        },
+
+        {
+            "id": 11,
+1            "email": "george.edwards@reqres.in",
+$            "first_name": "George",
+$            "last_name": "Edwards",
+A            "avatar": "https://reqres.in/img/faces/11-image.jpg"
+        },
+
+        {
+            "id": 12,
+0            "email": "rachel.howell@reqres.in",
+$            "first_name": "Rachel",
+#            "last_name": "Howell",
+A            "avatar": "https://reqres.in/img/faces/12-image.jpg"
+
+        }
+    ],
+    "support": {
+5        "url": "https://reqres.in/#support-heading",
+[        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+HTTP/1.1 200 OK
+%Date: Wed, 28 Aug 2024 14:57:32 GMT
+/Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+×Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724614752&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=SuQdM%2Bi3U4m3mpZQ%2FEL8cEuGy0rW41LcZ%2BXMH6WG69w%3D"}]}
+®Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724614752&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=SuQdM%2Bi3U4m3mpZQ%2FEL8cEuGy0rW41LcZ%2BXMH6WG69w%3D
+|Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+ Access-Control-Allow-Origin: *
+*Etag: W/"e8-ov4wWh4/OY1IMQMqWgskYtOFnVs"
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 1678
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 8ba527815df22bb0-FRA
+Content-Encoding: gzip
+
+{
+    "data": {
+        "id": 2,
+         "name": "fuchsia rose",
+        "year": 2001,
+        "color": "#C74375",
+#        "pantone_value": "17-2031"
+    },
+    "support": {
+5        "url": "https://reqres.in/#support-heading",
+[        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+HTTP/1.1 200 OK
+%Date: Wed, 28 Aug 2024 14:57:32 GMT
+/Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+ÕReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724766784&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=XgQL0w%2FNnY%2BiEaVuZUb736fNplCspcD1c3afFOfPwfk%3D"}]}
+¬Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724766784&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=XgQL0w%2FNnY%2BiEaVuZUb736fNplCspcD1c3afFOfPwfk%3D
+|Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+ Access-Control-Allow-Origin: *
++Etag: W/"2c1-N6Rqerxquq2kgQhL51EiSg4x0R8"
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 3312
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 8ba527829ba81c8d-AMS
+Content-Encoding: gzip
+
+{
+    "page": 1,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+
+        {
+            "id": 1,
+             "name": "cerulean",
+            "year": 2000,
+             "color": "#98B2D1",
+'            "pantone_value": "15-4020"
+        },
+
+        {
+            "id": 2,
+$            "name": "fuchsia rose",
+            "year": 2001,
+             "color": "#C74375",
+'            "pantone_value": "17-2031"
+        },
+
+        {
+            "id": 3,
+             "name": "true red",
+            "year": 2002,
+             "color": "#BF1932",
+'            "pantone_value": "19-1664"
+        },
+
+        {
+            "id": 4,
+             "name": "aqua sky",
+            "year": 2003,
+             "color": "#7BC4C4",
+'            "pantone_value": "14-4811"
+        },
+
+        {
+            "id": 5,
+!            "name": "tigerlily",
+            "year": 2004,
+             "color": "#E2583E",
+'            "pantone_value": "17-1456"
+        },
+
+        {
+            "id": 6,
+&            "name": "blue turquoise",
+            "year": 2005,
+             "color": "#53B0AE",
+'            "pantone_value": "15-5217"
+
+        }
+    ],
+    "support": {
+5        "url": "https://reqres.in/#support-heading",
+[        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+HTTP/1.1 404 Not Found
+%Date: Wed, 28 Aug 2024 14:57:32 GMT
+/Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+ÓReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724857052&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=chLz4ndWFDnl5lDNQAAHMm41jgXHmk%2B4W3Px32o798E%3D"}]}
+ªReporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724857052&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=chLz4ndWFDnl5lDNQAAHMm41jgXHmk%2B4W3Px32o798E%3D
+|Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+ Access-Control-Allow-Origin: *
+)Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: EXPIRED
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 8ba5278408229fc3-AMS
+
+{
+    
+}
+	HTTP/1.1 200 OK
+	%Date: Wed, 28 Aug 2024 14:57:33 GMT
+	/Content-Type: application/json; charset=utf-8
+	Transfer-Encoding: chunked
+	Connection: keep-alive
+	ÓReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1722262191&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=%2FW2z9JLGWOloeYB96w4UvbDfSX0QyWrAI1NlQXN9qTw%3D"}]}
+	ªReporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1722262191&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=%2FW2z9JLGWOloeYB96w4UvbDfSX0QyWrAI1NlQXN9qTw%3D
+	|Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+	X-Powered-By: Express
+	 Access-Control-Allow-Origin: *
+	+Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+	Via: 1.1 vegur
+	Cache-Control: max-age=14400
+	CF-Cache-Status: HIT
+	Age: 3237
+	Vary: Accept-Encoding
+	Server: cloudflare
+	CF-RAY: 8ba527856a7696ec-AMS
+	Content-Encoding: gzip
+	
+	{
+	    "data": {
+	        "id": 2,
+	+        "email": "janet.weaver@reqres.in",
+	        "first_name": "Janet",
+	        "last_name": "Weaver",
+	<        "avatar": "https://reqres.in/img/faces/2-image.jpg"
+	    },
+	    "support": {
+	5        "url": "https://reqres.in/#support-heading",
+	[        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+	    }
+	}
+
+HTTP/1.1 201 Created
+
+%Date: Wed, 28 Aug 2024 14:57:33 GMT
+
+/Content-Type: application/json; charset=utf-8
+
+Content-Length: 84
+
+Connection: keep-alive
+
+ÓReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724857053&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=yaj6VCNnNOxEjJ8qDZkZp7L7e83HjTdIHaZH76%2BkO9I%3D"}]}
+
+ªReporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724857053&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=yaj6VCNnNOxEjJ8qDZkZp7L7e83HjTdIHaZH76%2BkO9I%3D
+
+|Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+
+X-Powered-By: Express
+
+ Access-Control-Allow-Origin: *
+
+*Etag: W/"54-vY5Lko8Ber0JTRQYYsRxk82lz3U"
+
+Via: 1.1 vegur
+
+CF-Cache-Status: DYNAMIC
+
+Server: cloudflare
+
+CF-RAY: 8ba5278758458fee-FRA
+
+
+
+{
+
+    "name": "morpheus",
+
+    "job": "leader",
+
+    "id": "405",
+
+,    "createdAt": "2024-08-28T14:57:33.393Z"
+
+}
+HTTP/1.1 400 Bad Request
+%Date: Wed, 28 Aug 2024 14:57:33 GMT
+/Content-Type: application/json; charset=utf-8
+Content-Length: 28
+Connection: keep-alive
+ÓReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724857053&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=yaj6VCNnNOxEjJ8qDZkZp7L7e83HjTdIHaZH76%2BkO9I%3D"}]}
+ªReporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724857053&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=yaj6VCNnNOxEjJ8qDZkZp7L7e83HjTdIHaZH76%2BkO9I%3D
+|Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+ Access-Control-Allow-Origin: *
+*Etag: W/"1c-NmpazMScs9tOqR7eDEesn+pqC9Q"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8ba527894e3a1c7e-AMS
+
+{
+     "error": "Missing password"
+}
+HTTP/1.1 200 OK
+%Date: Wed, 28 Aug 2024 14:57:34 GMT
+/Content-Type: application/json; charset=utf-8
+Content-Length: 29
+Connection: keep-alive
+ÓReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724857053&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=yaj6VCNnNOxEjJ8qDZkZp7L7e83HjTdIHaZH76%2BkO9I%3D"}]}
+ªReporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724857053&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=yaj6VCNnNOxEjJ8qDZkZp7L7e83HjTdIHaZH76%2BkO9I%3D
+|Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+ Access-Control-Allow-Origin: *
+*Etag: W/"1d-lGCrvD6B7Qzk11+2C98+nGhhuec"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8ba5278ab89ca866-RIX
+
+{
+!    "token": "QpwL5tke4Pnpja7X4"
+}
+HTTP/1.1 200 OK
+%Date: Wed, 28 Aug 2024 14:57:34 GMT
+/Content-Type: application/json; charset=utf-8
+Content-Length: 36
+Connection: keep-alive
+ÓReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724857054&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=4BQIC2CEV%2BntF6oKdT4Uc0PdpoJgcVdQL3PwGhEC2ng%3D"}]}
+ªReporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724857054&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=4BQIC2CEV%2BntF6oKdT4Uc0PdpoJgcVdQL3PwGhEC2ng%3D
+|Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+ Access-Control-Allow-Origin: *
+*Etag: W/"24-4iP0za1geN2he+ohu8F0FhCjLks"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8ba5278cacb50a75-AMS
+
+{
+    "id": 4,
+!    "token": "QpwL5tke4Pnpja7X4"
+}
+HTTP/1.1 400 Bad Request
+%Date: Wed, 28 Aug 2024 14:57:34 GMT
+/Content-Type: application/json; charset=utf-8
+Content-Length: 28
+Connection: keep-alive
+ÓReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724857054&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=4BQIC2CEV%2BntF6oKdT4Uc0PdpoJgcVdQL3PwGhEC2ng%3D"}]}
+ªReporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724857054&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=4BQIC2CEV%2BntF6oKdT4Uc0PdpoJgcVdQL3PwGhEC2ng%3D
+|Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+ Access-Control-Allow-Origin: *
+*Etag: W/"1c-NmpazMScs9tOqR7eDEesn+pqC9Q"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8ba5278dfe259f5e-AMS
+
+{
+     "error": "Missing password"
+}
+HTTP/1.1 200 OK
+%Date: Wed, 28 Aug 2024 14:57:34 GMT
+/Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+ÓReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724857054&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=4BQIC2CEV%2BntF6oKdT4Uc0PdpoJgcVdQL3PwGhEC2ng%3D"}]}
+ªReporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724857054&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=4BQIC2CEV%2BntF6oKdT4Uc0PdpoJgcVdQL3PwGhEC2ng%3D
+|Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+ Access-Control-Allow-Origin: *
+*Etag: W/"50-wCiLH/fIKqlxfuK3bSsaCfG6+/U"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8ba5278f39ba0a59-AMS
+Content-Encoding: gzip
+
+{
+    "name": "morpheus",
+    "job": "zion resident",
+,    "updatedAt": "2024-08-28T14:57:34.641Z"
+}
+HTTP/1.1 200 OK
+%Date: Wed, 28 Aug 2024 14:57:34 GMT
+/Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+ÓReport-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724857054&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=4BQIC2CEV%2BntF6oKdT4Uc0PdpoJgcVdQL3PwGhEC2ng%3D"}]}
+ªReporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724857054&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=4BQIC2CEV%2BntF6oKdT4Uc0PdpoJgcVdQL3PwGhEC2ng%3D
+|Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+ Access-Control-Allow-Origin: *
+*Etag: W/"50-JmzOTB/dm7JnAZL5VXF0WmMBTfU"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 8ba527908b119f63-AMS
+Content-Encoding: gzip
+
+{
+    "name": "morpheus",
+    "job": "zion resident",
+,    "updatedAt": "2024-08-28T14:57:34.853Z"
+}
