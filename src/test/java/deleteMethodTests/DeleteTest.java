@@ -1,6 +1,7 @@
 package deleteMethodTests;
 
 import io.restassured.response.ValidatableResponse;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import utilCollection.*;
 
@@ -15,7 +16,5 @@ public class DeleteTest {
                 .when()
                 .delete("api/users/2")
                 .then().log().all();
-
-        System.out.println();
     }
 }

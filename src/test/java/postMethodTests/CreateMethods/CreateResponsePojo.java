@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.util.Date;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
@@ -16,5 +18,5 @@ public class CreateResponsePojo {
     @Getter
     private String id;
     @Getter
-    private String createdAt;
+    private Date createdAt;
 }
