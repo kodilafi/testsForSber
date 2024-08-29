@@ -1,28 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="updateMethods.patchMethodTests.Update_PatchTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-08-28T14:57:34" hostname="DESKTOP-FL91MBP" time="0.203">
+<testsuite name="updateMethods.patchMethodTests.Update_PatchTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-08-29T18:55:36" hostname="DESKTOP-FL91MBP" time="2.003">
   <properties/>
-  <testcase name="update_user_test()" classname="updateMethods.patchMethodTests.Update_PatchTest" time="0.203"/>
+  <testcase name="patchTest_assertNotNull()" classname="updateMethods.patchMethodTests.Update_PatchTest" time="0.496"/>
+  <testcase name="patchTest_assertEqualsJob()" classname="updateMethods.patchMethodTests.Update_PatchTest" time="0.5"/>
+  <testcase name="patchTest_assertEqualsDate()" classname="updateMethods.patchMethodTests.Update_PatchTest" time="0.474"/>
+  <testcase name="patchTest_assertEqualsName()" classname="updateMethods.patchMethodTests.Update_PatchTest" time="0.525"/>
   <system-out><![CDATA[HTTP/1.1 200 OK
-Date: Wed, 28 Aug 2024 14:57:34 GMT
+Date: Thu, 29 Aug 2024 18:55:36 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724857054&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=4BQIC2CEV%2BntF6oKdT4Uc0PdpoJgcVdQL3PwGhEC2ng%3D"}]}
-Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724857054&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=4BQIC2CEV%2BntF6oKdT4Uc0PdpoJgcVdQL3PwGhEC2ng%3D
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724957736&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=9MZdfXfEhl8vVZrDI6ZsSMs2mpBeHlS1UJBy2yRin7w%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724957736&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=9MZdfXfEhl8vVZrDI6ZsSMs2mpBeHlS1UJBy2yRin7w%3D
 Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-Etag: W/"50-wCiLH/fIKqlxfuK3bSsaCfG6+/U"
+Etag: W/"50-Y1FA+NLcMmkU4V3pawhwauqE0RA"
 Via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Server: cloudflare
-CF-RAY: 8ba5278f39ba0a59-AMS
+CF-RAY: 8baec19aec51bb4a-FRA
 Content-Encoding: gzip
 
 {
     "name": "morpheus",
     "job": "zion resident",
-    "updatedAt": "2024-08-28T14:57:34.641Z"
+    "updatedAt": "2024-08-29T18:55:36.194Z"
+}
+HTTP/1.1 200 OK
+Date: Thu, 29 Aug 2024 18:55:36 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724957736&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=9MZdfXfEhl8vVZrDI6ZsSMs2mpBeHlS1UJBy2yRin7w%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724957736&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=9MZdfXfEhl8vVZrDI6ZsSMs2mpBeHlS1UJBy2yRin7w%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"50-uoWVMMuZzJotFzuBVxhZ7qC4tRw"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8baec19e1e250b4f-AMS
+Content-Encoding: gzip
+
+{
+    "name": "morpheus",
+    "job": "zion resident",
+    "updatedAt": "2024-08-29T18:55:36.702Z"
+}
+HTTP/1.1 200 OK
+Date: Thu, 29 Aug 2024 18:55:37 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724957737&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=7rRSDhH0M%2F%2FdayNZ9MnS6u9FAk7SojXNj9%2F%2Bq7GaTvA%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724957737&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=7rRSDhH0M%2F%2FdayNZ9MnS6u9FAk7SojXNj9%2F%2Bq7GaTvA%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"50-Mz2H3t3dMRM/YqKkSHsvwvjRDA0"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8baec1a11a4a0b80-AMS
+Content-Encoding: gzip
+
+{
+    "name": "morpheus",
+    "job": "zion resident",
+    "updatedAt": "2024-08-29T18:55:37.180Z"
+}
+HTTP/1.1 200 OK
+Date: Thu, 29 Aug 2024 18:55:37 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1724957737&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=7rRSDhH0M%2F%2FdayNZ9MnS6u9FAk7SojXNj9%2F%2Bq7GaTvA%3D"}]}
+Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1724957737&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=7rRSDhH0M%2F%2FdayNZ9MnS6u9FAk7SojXNj9%2F%2Bq7GaTvA%3D
+Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"50-ciS6F6ezYKbDIph+R1i1t4qJKG4"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+CF-RAY: 8baec1a45e989290-FRA
+Content-Encoding: gzip
+
+{
+    "name": "morpheus",
+    "job": "zion resident",
+    "updatedAt": "2024-08-29T18:55:37.701Z"
 }
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

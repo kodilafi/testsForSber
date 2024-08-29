@@ -1,0 +1,1 @@
+{"uuid":"e6edb41b-2692-412d-9c5c-3ef1f8476c70","name":"patchTest_assertEqualsJob()","children":["f7471c0f-f3a8-45dc-a2e2-468cff9df0fd"],"befores":[{"name":"SetUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1724957402832,"stop":1724957403137}],"afters":[],"links":[],"start":1724957402831,"stop":1724957403138}

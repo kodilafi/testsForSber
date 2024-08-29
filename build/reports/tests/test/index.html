@@ -20,13 +20,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">14</div>
+<div class="counter">29</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
@@ -38,7 +38,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">6.193s</div>
+<div class="counter">16.968s</div>
 <p>duration</p>
 </div>
 </td>
@@ -47,8 +47,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">96%</div>
 <p>successful</p>
 </div>
 </td>
@@ -58,13 +58,25 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Packages</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Classes</a>
+<a href="#tab1">Packages</a>
+</li>
+<li>
+<a href="#tab2">Classes</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<ul class="linkList">
+<li>
+<a href="classes/getMethodTests.Users.GetUserListTest.html">GetUserListTest</a>.
+<a href="classes/getMethodTests.Users.GetUserListTest.html#getListUsers_assertNotNull()">getListUsers_assertNotNull()</a>
+</li>
+</ul>
+</div>
+<div id="tab1" class="tab">
 <h2>Packages</h2>
 <table>
 <thead>
@@ -85,73 +97,83 @@
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>2.171s</td>
+<td>2.266s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
-<a href="packages/getMethodTests.html">getMethodTests</a>
+<a href="packages/getMethodTests.Resources.html">getMethodTests.Resources</a>
 </td>
-<td>6</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
-<td>2.231s</td>
+<td>2.252s</td>
 <td class="success">100%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="packages/getMethodTests.Users.html">getMethodTests.Users</a>
+</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>1.409s</td>
+<td class="failures">66%</td>
 </tr>
 <tr>
 <td class="success">
 <a href="packages/postMethodTests.CreateMethods.html">postMethodTests.CreateMethods</a>
 </td>
-<td>1</td>
+<td>4</td>
 <td>0</td>
 <td>0</td>
-<td>0.363s</td>
+<td>2.082s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
 <a href="packages/postMethodTests.LoginMethods.html">postMethodTests.LoginMethods</a>
 </td>
-<td>2</td>
+<td>4</td>
 <td>0</td>
 <td>0</td>
-<td>0.576s</td>
+<td>1.998s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
 <a href="packages/postMethodTests.RegisterMethods.html">postMethodTests.RegisterMethods</a>
 </td>
-<td>2</td>
+<td>6</td>
 <td>0</td>
 <td>0</td>
-<td>0.440s</td>
+<td>2.996s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
 <a href="packages/updateMethods.patchMethodTests.html">updateMethods.patchMethodTests</a>
 </td>
-<td>1</td>
+<td>4</td>
 <td>0</td>
 <td>0</td>
-<td>0.203s</td>
+<td>1.995s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
 <a href="packages/updateMethods.putMethodTests.html">updateMethods.putMethodTests</a>
 </td>
-<td>1</td>
+<td>4</td>
 <td>0</td>
 <td>0</td>
-<td>0.209s</td>
+<td>1.970s</td>
 <td class="success">100%</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Classes</h2>
 <table>
 <thead>
@@ -172,67 +194,137 @@
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>2.171s</td>
+<td>2.266s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
-<a href="classes/getMethodTests.GetTests.html">getMethodTests.GetTests</a>
+<a href="classes/getMethodTests.Resources.GetOnceResourceTests.html">getMethodTests.Resources.GetOnceResourceTests</a>
 </td>
-<td>6</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
-<td>2.231s</td>
+<td>1.314s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/getMethodTests.Resources.GetResourceListTest.html">getMethodTests.Resources.GetResourceListTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.419s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/getMethodTests.Resources.GetResourceNotFoundTest.html">getMethodTests.Resources.GetResourceNotFoundTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.519s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/getMethodTests.Users.GetSingleUserTest.html">getMethodTests.Users.GetSingleUserTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.460s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="classes/getMethodTests.Users.GetUserListTest.html">getMethodTests.Users.GetUserListTest</a>
+</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0.474s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/getMethodTests.Users.GetUserNotFoundTest.html">getMethodTests.Users.GetUserNotFoundTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.475s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
 <a href="classes/postMethodTests.CreateMethods.PostTest.html">postMethodTests.CreateMethods.PostTest</a>
 </td>
-<td>1</td>
+<td>4</td>
 <td>0</td>
 <td>0</td>
-<td>0.363s</td>
+<td>2.082s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
-<a href="classes/postMethodTests.LoginMethods.LoginTests.html">postMethodTests.LoginMethods.LoginTests</a>
+<a href="classes/postMethodTests.LoginMethods.SuccessfulLoginTests.html">postMethodTests.LoginMethods.SuccessfulLoginTests</a>
 </td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0.576s</td>
+<td>1.016s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
-<a href="classes/postMethodTests.RegisterMethods.RegisterTests.html">postMethodTests.RegisterMethods.RegisterTests</a>
+<a href="classes/postMethodTests.LoginMethods.UnsuccessfulLoginTest.html">postMethodTests.LoginMethods.UnsuccessfulLoginTest</a>
 </td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0.440s</td>
+<td>0.982s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/postMethodTests.RegisterMethods.SuccessfulRegister.html">postMethodTests.RegisterMethods.SuccessfulRegister</a>
+</td>
+<td>4</td>
+<td>0</td>
+<td>0</td>
+<td>1.977s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/postMethodTests.RegisterMethods.UnsuccessfulRegisterTests.html">postMethodTests.RegisterMethods.UnsuccessfulRegisterTests</a>
+</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>1.019s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
 <a href="classes/updateMethods.patchMethodTests.Update_PatchTest.html">updateMethods.patchMethodTests.Update_PatchTest</a>
 </td>
-<td>1</td>
+<td>4</td>
 <td>0</td>
 <td>0</td>
-<td>0.203s</td>
+<td>1.995s</td>
 <td class="success">100%</td>
 </tr>
 <tr>
 <td class="success">
 <a href="classes/updateMethods.putMethodTests.Update_PutTest.html">updateMethods.putMethodTests.Update_PutTest</a>
 </td>
-<td>1</td>
+<td>4</td>
 <td>0</td>
 <td>0</td>
-<td>0.209s</td>
+<td>1.970s</td>
 <td class="success">100%</td>
 </tr>
 </tbody>
@@ -246,7 +338,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.8</a> at 28 авг. 2024 г., 17:57:35</p>
+<a href="http://www.gradle.org">Gradle 8.8</a> at 29.08.2024 21:55:40</p>
 </div>
 </div>
 </body>
