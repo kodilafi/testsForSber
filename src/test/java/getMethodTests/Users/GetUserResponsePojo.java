@@ -1,4 +1,4 @@
-package getMethodTests;
+package getMethodTests.Users;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
