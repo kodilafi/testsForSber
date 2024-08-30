@@ -1,4 +1,5 @@
-FROM openjdk:17-jdk-slim-buster
+FROM gradle:8.8-jdk17 AS build
 WORKDIR /app
-COPY /build/libs/forSber-1.0-SNAPSHOT.jar /app/forSber.jar
-ENTRYPOINT ["java","-jar","forSber.jar"]
+COPY . .
+RUN gradle build --no-daemon
+CMD ["gradle", "test", "--no-daemon"]

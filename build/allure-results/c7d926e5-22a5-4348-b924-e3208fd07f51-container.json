@@ -1,1 +1,0 @@
-{"uuid":"c7d926e5-22a5-4348-b924-e3208fd07f51","name":"getResource_assertNotNull()","children":["9929631f-2397-4de4-9af2-f978d4304acd"],"befores":[{"name":"SetUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1724957445757,"stop":1724957446804}],"afters":[],"links":[],"start":1724957445745,"stop":1724957446821}

@@ -1,1 +1,0 @@
-{"uuid":"53138c31-5365-4fc9-b51d-f62b156560f9","name":"postTest_assertNotNullUser()","children":["8091f02f-a75d-4715-a30d-c105e2085656"],"befores":[{"name":"SetUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1724957730529,"stop":1724957731018}],"afters":[],"links":[],"start":1724957730528,"stop":1724957731019}

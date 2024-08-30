@@ -1,1 +1,0 @@
-{"uuid":"3f2aca86-72f7-4204-8b04-5f24caf31fb7","name":"patchTest_assertEqualsName()","children":["434c66ea-cfd0-4264-860b-813290e0474b"],"befores":[{"name":"SetUp","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1724957456777,"stop":1724957457251}],"afters":[],"links":[],"start":1724957456776,"stop":1724957457252}
