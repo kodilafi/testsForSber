@@ -16,7 +16,5 @@ public class DeleteTest {
                 .when()
                 .delete("api/users/2")
                 .then().log().all();
-
-        System.out.println("hello");
     }
 }
