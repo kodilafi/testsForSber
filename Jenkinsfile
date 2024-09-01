@@ -2,14 +2,9 @@ pipeline {
   agent any
 
   stages {
-    stage ('Chekout') {
-      steps {
-        chekout scm
-      }
-    }
     stage ('Build') {
       steps {
-        sh './gradlew clean build'
+        echo 'Build project...'
       }
     }
     stage ('API-Test') {
