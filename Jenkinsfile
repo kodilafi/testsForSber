@@ -2,9 +2,10 @@ pipeline {
   agent any
 
   stages {
-    stage ('Build') {
+    stage ('Set Permissions') {
       steps {
         echo 'Build project...'
+        sh 'chmod +x gradlew'
       }
     }
     stage ('API-Test') {
