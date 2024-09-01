@@ -7,8 +7,10 @@ pipeline {
 
   stages {
     stage ('API-Test') {
-      echo 'Running tests...'
-      sh './gradlew test'
+      steps {
+        echo 'Running tests...'
+        sh './gradlew test'
+      }
     }
   }
 }
