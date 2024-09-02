@@ -1,5 +1,10 @@
 pipeline {
-  agent { docker { image 'gradle:8.8.0-jdk17' } }
+  agent { 
+    docker { 
+      image 'gradle:8.8.0-jdk17' 
+      args '-v /var/run/docker.sock:/var/run/docker.sock'
+    } 
+  }
 
   stages {
     stage ('Set Permissions') {
