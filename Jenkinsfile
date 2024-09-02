@@ -1,8 +1,8 @@
 pipeline {
   agent { 
     docker { 
-      image 'gradle:8.8.0-jdk17' 
-      args '-v /var/run/docker.sock:/var/run/docker.sock'
+      image 'docker:24.0.2-dind' 
+      args '--privileged'
     } 
   }
 
