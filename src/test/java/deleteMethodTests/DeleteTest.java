@@ -1,20 +1,21 @@
 package deleteMethodTests;
 
-import io.restassured.response.ValidatableResponse;
-import org.junit.jupiter.api.Assertions;
+import io.restassured.response.Response;
 import org.junit.jupiter.api.Test;
 import utilCollection.*;
 
 import static io.restassured.RestAssured.given;
+import static utilCollection.WriteLogger.showLoggerInformation;
 
 public class DeleteTest {
     @Test
     public void delete_user_test() {
         Specifications.InstallSpecification(204);
 
-        ValidatableResponse deleteUser = given()
+        Response response = given()
                 .when()
-                .delete("api/users/2")
-                .then().log().all();
+                .delete("api/users/2");
+
+        showLoggerInformation("deleteTest", response);
     }
 }

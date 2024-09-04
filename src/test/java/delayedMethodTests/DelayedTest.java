@@ -7,6 +7,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import utilCollection.Specifications;
 
+import static utilCollection.WriteLogger.showLoggerInformation;
+
 public class DelayedTest {
     Response response;
 
@@ -19,6 +21,6 @@ public class DelayedTest {
     @Test
     public void delayedTest_waitingMore1Sec () {
         Assertions.assertTrue(response.time() > 1000);
-        System.out.println("Время на получение ответа: " + response.time() + "ms.");
+        showLoggerInformation("delayedTest", response);
     }
 }
