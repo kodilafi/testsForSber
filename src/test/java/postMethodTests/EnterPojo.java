@@ -8,7 +8,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class EnterPogo {
+public class EnterPojo {
     @Getter
     private String email;
     @Getter

@@ -1,39 +1,36 @@
 package postMethodTests.LoginMethods;
 
+import io.restassured.response.Response;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import postMethodTests.EnterPogo;
+import postMethodTests.EnterPojo;
 import postMethodTests.ErrorPojo;
 import utilCollection.Specifications;
 
 import static io.restassured.RestAssured.given;
+import static utilCollection.WriteLogger.differenceField;
+import static utilCollection.WriteLogger.showLoggerInformation;
 
 public class UnsuccessfulLoginTest {
-    EnterPogo loginUser;
+    Response response;
+    EnterPojo request;
     ErrorPojo error;
 
     @BeforeEach
     public void UnsuccessfulLoginUser() {
         Specifications.InstallSpecification(400);
 
-        loginUser = new EnterPogo("peter@klaven", "");
-
-        error = given()
-                .body(loginUser)
-                .when()
-                .post("/api/login")
-                .then().log().all()
-                .extract().as(ErrorPojo.class);
+        request = new EnterPojo("peter@klaven", "");
+        response = given().body(request).when().post("/api/login");
+        error = response.then().extract().jsonPath().getObject("", ErrorPojo.class);
     }
 
-    @Test
-    public void postTest_assertNotNull () {
-        Assertions.assertNotNull(error.getError());
-    }
-
+    //Тест_1: на вывод сообщения об ошибке.
     @Test
     public void postTest_assertEquals () {
-        Assertions.assertEquals("Missing password", error.getError());
+        Assertions.assertNotNull(error.getError());
+        differenceField("message", "Missing password", error.getError());
+        showLoggerInformation("postTest_assertEquals", response);
     }
 }

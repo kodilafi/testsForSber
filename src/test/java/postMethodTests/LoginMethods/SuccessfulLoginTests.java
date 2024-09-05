@@ -1,40 +1,37 @@
 package postMethodTests.LoginMethods;
 
+import io.restassured.response.Response;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import postMethodTests.EnterPogo;
-import postMethodTests.ErrorPojo;
+import postMethodTests.EnterPojo;
 import utilCollection.Specifications;
 
 import static io.restassured.RestAssured.given;
+import static utilCollection.WriteLogger.differenceField;
+import static utilCollection.WriteLogger.showLoggerInformation;
 
 public class SuccessfulLoginTests {
-    EnterPogo user;
+    Response response;
+    EnterPojo request;
     SuccessLoginPojo login;
 
     @BeforeEach
     public void SuccessfulLoginUser() {
         Specifications.InstallSpecification(200);
 
-        user = new EnterPogo("eve.holt@reqres.in", "cityslicka");
-
-        login = given()
-                .body(user)
-                .when()
-                .post("/api/login")
-                .then().log().all()
-                .extract().as(SuccessLoginPojo.class);
+        request = new EnterPojo("eve.holt@reqres.in", "cityslicka");
+        response = given().body(request).when().post("/api/login");
+        login = response.then().extract().jsonPath().getObject("", SuccessLoginPojo.class);
     }
 
-    @Test
-    public void postTest_assertNotNullToken() {
-        Assertions.assertNotNull(login.getToken());
-    }
-
+    //Тест_1: на сравнение ожидаемого и создаваемого токена.
     @Test
     public void postTest_assertEqualsToken() {
+        Assertions.assertNotNull(login.getToken());
+
         String token = "QpwL5tke4Pnpja7X4";
-        Assertions.assertEquals(token, login.getToken());
+        differenceField("token", token, login.getToken());
+        showLoggerInformation("postTest_assertEqualsToken", response);
     }
 }

@@ -1,55 +1,52 @@
 package updateMethods.patchMethodTests;
 
-import org.junit.jupiter.api.Assertions;
+import io.restassured.response.Response;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.platform.commons.logging.LoggerFactory;
-import postMethodTests.ErrorPojo;
+import updateMethods.UpdateRepsonsePojo;
 import updateMethods.UpdateRequestPojo;
-import updateMethods.UpdateResponsePojo;
 import utilCollection.Specifications;
 
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.util.logging.Logger;
-
 import static io.restassured.RestAssured.given;
+import static utilCollection.WriteLogger.*;
 
 public class Update_PatchTest {
-    UpdateResponsePojo userBefore;
-    UpdateRequestPojo userAfter;
+    Response response;
+    UpdateRequestPojo request;
+    UpdateRepsonsePojo userAfter;
 
     @BeforeEach
     public void SetUp() {
         Specifications.InstallSpecification(200);
 
-        userBefore = new UpdateResponsePojo("morpheus", "zion resident");
+        request = new UpdateRequestPojo("morpheus", "zion resident");
+        response = given().body(request).when().patch("/api/users/2");
+        userAfter = response.then().extract().jsonPath().getObject("", UpdateRepsonsePojo.class);
 
-        userAfter = given()
-                .body(userBefore)
-                .when()
-                .patch("/api/users/2")
-                .then().log().all()
-                .extract().as(UpdateRequestPojo.class);
+        showLoggerInformation("putTest", response);
     }
 
+    //Тест_1: на равенство ресурса null.
     @Test
     public void patchTest_assertNotNull() {
-        Assertions.assertNotNull(userAfter);
+        notNull("UpdateRequestPojo", userAfter);
     }
 
+    //Тест_2: на сравнение поля Job в request и response.
     @Test
     public void patchTest_assertEqualsJob() {
-        Assertions.assertEquals(userBefore.getJob(), userAfter.getJob());
+        differenceField("Job", request.getJob(), userAfter.getJob());
     }
 
+    //Тест_3: на сравнение поля Name в request и response.
     @Test
     public void patchTest_assertEqualsName() {
-        Assertions.assertEquals(userBefore.getName(), userAfter.getName());
+        differenceField("Name", request.getJob(), userAfter.getJob());
     }
 
+    //Тест_4: на сравнение сегодняшней даты и даты обновления.
     @Test
     public void patchTest_assertEqualsDate() {
-        Assertions.assertEquals(LocalDate.now().toString(), new SimpleDateFormat("yyyy-MM-dd").format(userAfter.getUpdatedAt()));
+        differenceData("дата обновления пользователя", userAfter.getUpdatedAt());
     }
 }

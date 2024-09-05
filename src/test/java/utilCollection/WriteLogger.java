@@ -1,42 +1,69 @@
 package utilCollection;
 
 import io.restassured.response.Response;
+import org.junit.jupiter.api.Assertions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.Date;
+import java.util.List;
 
-import static utilCollection.constantForTests.*;
+import static utilCollection.ConstantForTests.*;
 
 public class WriteLogger {
     private static final Logger logger = LoggerFactory.getLogger(WriteLogger.class);
 
     public static void differenceField (String checkField, String except, String actual) {
-        logger.info("\nПоле '" + CL_WHITE + checkField + CL_RESET
-                + "', введенное при создании: " + CL_CYAN + except + CL_RESET
-                + ", также '" + CL_WHITE + checkField + CL_RESET + "' отображаемое в созданном пользователе: "
-                + CL_CYAN + actual + CL_RESET + ".\n\n");
+        Assertions.assertEquals(except, actual);
+
+        logger.info("\nПоле '" + getCL_WHITE() + checkField + getCL_RESET()
+                + "', введенное при создании: " + getCL_YELLOW() + except + getCL_RESET()
+                + ", также '" + getCL_WHITE() + checkField + getCL_RESET() + "' отображаемое в созданном пользователе: "
+                + getCL_YELLOW() + actual + getCL_RESET() + ".\n");
+    }
+
+    public static void differenceField (String checkField, int except, int actual) {
+        Assertions.assertEquals(except, actual);
+
+        logger.info("\nПоле '" + getCL_WHITE() + checkField + getCL_RESET()
+                + "', введенное при создании: " + getCL_YELLOW() + except + getCL_RESET()
+                + ", также '" + getCL_WHITE() + checkField + getCL_RESET() + "' отображаемое в созданном пользователе: "
+                + getCL_YELLOW() + actual + getCL_RESET() + ".\n");
     }
 
     public static void differenceData (String text, Date data) {
-        logger.info("\nСегодняшняя дата: " + CL_CYAN + LocalDate.now() + CL_RESET + ", "
-                + CL_WHITE + text + CL_RESET + ": "
-                + CL_CYAN + new SimpleDateFormat("yyyy-MM-dd").format(data) + CL_RESET + ".\n\n");
+        Assertions.assertEquals(LocalDate.now().toString(), new SimpleDateFormat("yyyy-MM-dd").format(data));
+
+        logger.info("\nСегодняшняя дата: " + getCL_YELLOW() + LocalDate.now() + getCL_RESET() + ", "
+                + getCL_WHITE() + text + getCL_RESET() + ": "
+                + getCL_YELLOW() + new SimpleDateFormat("yyyy-MM-dd").format(data) + getCL_RESET() + ".\n");
     }
 
-    public static void notNull (String text, boolean bool) {
-        if (!bool) {
-            logger.info("\nОбъект '" + CL_WHITE + text + CL_RESET + "' не равен null.\n\n");
+    public static void notNull (String text, Object object) {
+        if (object == null) {
+            logger.info("\nОбъект '" + getCL_WHITE() + text + getCL_RESET() + "' равен null.\n");
+            Assertions.assertNull(object);
         } else {
-            logger.info("\nОбъект '" + CL_WHITE + text + CL_RESET + "' равен null.\n\n");
+            logger.info("\nОбъект '" + getCL_WHITE() + text + getCL_RESET() + "' не равен null.\n");
+            Assertions.assertNotNull(object);
+        }
+    }
+
+    public static void notNull (String text, List object) {
+        if (object == null) {
+            logger.info("\nОбъект '" + getCL_WHITE() + text + getCL_RESET() + "' равен null.\n");
+            Assertions.assertNull(object);
+        } else {
+            logger.info("\nОбъект '" + getCL_WHITE() + text + getCL_RESET() + "' не равен null.\n");
+            Assertions.assertNotNull(object);
         }
     }
 
     public static void showLoggerInformation (String testName, Response response) {
-        logger.info("\nНазвание теста: " + CL_WHITE + testName + CL_RESET + ".\n"
-                + "Статус код: " + CL_WHITE + response.statusCode() + CL_RESET + ".\n"
-                + "Время затраченное на получение ответа: " + CL_YELLOW + response.time() + CL_RESET + " ms.\n");
+        logger.info("\nНазвание теста: " + getCL_WHITE() + testName + getCL_RESET() + ".\n"
+                + "Статус код: " + getCL_WHITE() + response.statusCode() + getCL_RESET() + ".\n"
+                + "Время затраченное на получение ответа: " + getCL_YELLOW() + response.time() + getCL_RESET() + " ms.\n");
     }
 }

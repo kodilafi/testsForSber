@@ -5,12 +5,16 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.util.Date;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class UpdateResponsePojo {
+public class UpdateRepsonsePojo {
     @Getter
     private String name;
     @Getter
     private String job;
+    @Getter
+    private Date updatedAt;
 }

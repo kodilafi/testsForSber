@@ -8,6 +8,8 @@ import utilCollection.Specifications;
 import java.util.List;
 
 import static io.restassured.RestAssured.given;
+import static utilCollection.WriteLogger.notNull;
+import static utilCollection.WriteLogger.showLoggerInformation;
 
 public class GetResourceTest {
     Response response;
@@ -18,21 +20,21 @@ public class GetResourceTest {
     @Test
     public void getSingleResource_assertNotNull () {
         getSingleResource();
-        Assertions.assertNotNull(singleResource);
+        notNull("singleResource", singleResource);
     }
 
     //Тест_2: на получение списка ресурсов.
     @Test
     public void getListOfResource_assertNotNull () {
         getListOfResource();
-        Assertions.assertNotNull(listOfResource);
+        notNull("listOfResource", listOfResource);
     }
 
     //Тест_3: на попытку получить несуществующий ресурс.
     @Test
     public void getNotFoundResource_assertNull () {
         getNotFoundResource();
-        Assertions.assertNull(singleResource);
+        notNull("singleResource", singleResource);
     }
 
 
@@ -41,31 +43,28 @@ public class GetResourceTest {
 
     private void getSingleResource () {
         Specifications.InstallSpecification(200);
-        response = given().when().get("api/unknown/2");
 
-        singleResource = response
-                .then().log().all()
-                .extract().jsonPath()
-                .getObject("data", GetResourceRequestPojo.class);
+        response = given().when().get("api/unknown/2");
+        singleResource = response.then().extract().jsonPath().getObject("data", GetResourceRequestPojo.class);
+
+        showLoggerInformation("getSingleResource", response);
     }
 
     private void getListOfResource () {
         Specifications.InstallSpecification(200);
-        response = given().when().get("api/unknown");
 
-        listOfResource = response
-                .then().log().all()
-                .extract().jsonPath()
-                .getList("data", GetResourceRequestPojo.class);
+        response = given().when().get("api/unknown");
+        listOfResource = response.then().extract().jsonPath().getList("data", GetResourceRequestPojo.class);
+
+        showLoggerInformation("getListOfResource", response);
     }
 
     private void getNotFoundResource () {
         Specifications.InstallSpecification(404);
-        response = given().when().get("api/unknown/23");
 
-        singleResource = response
-                .then().log().all()
-                .extract().jsonPath()
-                .getObject("data", GetResourceRequestPojo.class);
+        response = given().when().get("api/unknown/23");
+        singleResource = response.then().extract().jsonPath().getObject("data", GetResourceRequestPojo.class);
+
+        showLoggerInformation("getNotFoundResource", response);
     }
 }

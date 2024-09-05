@@ -8,13 +8,14 @@ import static io.restassured.RestAssured.given;
 import static utilCollection.WriteLogger.showLoggerInformation;
 
 public class DeleteTest {
+    Response response;
+
+    //Тест_1: на удаление пользователя.
     @Test
-    public void delete_user_test() {
+    public void deleteUser_test() {
         Specifications.InstallSpecification(204);
 
-        Response response = given()
-                .when()
-                .delete("api/users/2");
+        response = given().when().delete("api/users/2");
 
         showLoggerInformation("deleteTest", response);
     }
