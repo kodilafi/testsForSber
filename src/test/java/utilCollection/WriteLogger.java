@@ -13,12 +13,10 @@ import java.util.List;
 import static utilCollection.ConstantForTests.*;
 
 public class WriteLogger {
-    private static final Logger logger = LoggerFactory.getLogger(WriteLogger.class);
-
     public static void differenceField (String checkField, String except, String actual) {
         Assertions.assertEquals(except, actual);
 
-        logger.info("\nПоле '" + getCL_WHITE() + checkField + getCL_RESET()
+        System.out.println("\nПоле '" + getCL_WHITE() + checkField + getCL_RESET()
                 + "', введенное при создании: " + getCL_YELLOW() + except + getCL_RESET()
                 + ", также '" + getCL_WHITE() + checkField + getCL_RESET() + "' отображаемое в созданном пользователе: "
                 + getCL_YELLOW() + actual + getCL_RESET() + ".\n");
@@ -27,7 +25,7 @@ public class WriteLogger {
     public static void differenceField (String checkField, int except, int actual) {
         Assertions.assertEquals(except, actual);
 
-        logger.info("\nПоле '" + getCL_WHITE() + checkField + getCL_RESET()
+        System.out.println("\nПоле '" + getCL_WHITE() + checkField + getCL_RESET()
                 + "', введенное при создании: " + getCL_YELLOW() + except + getCL_RESET()
                 + ", также '" + getCL_WHITE() + checkField + getCL_RESET() + "' отображаемое в созданном пользователе: "
                 + getCL_YELLOW() + actual + getCL_RESET() + ".\n");
@@ -36,33 +34,33 @@ public class WriteLogger {
     public static void differenceData (String text, Date data) {
         Assertions.assertEquals(LocalDate.now().toString(), new SimpleDateFormat("yyyy-MM-dd").format(data));
 
-        logger.info("\nСегодняшняя дата: " + getCL_YELLOW() + LocalDate.now() + getCL_RESET() + ", "
+        System.out.println("\nСегодняшняя дата: " + getCL_YELLOW() + LocalDate.now() + getCL_RESET() + ", "
                 + getCL_WHITE() + text + getCL_RESET() + ": "
                 + getCL_YELLOW() + new SimpleDateFormat("yyyy-MM-dd").format(data) + getCL_RESET() + ".\n");
     }
 
     public static void notNull (String text, Object object) {
         if (object == null) {
-            logger.info("\nОбъект '" + getCL_WHITE() + text + getCL_RESET() + "' равен null.\n");
+            System.out.println("\nОбъект '" + getCL_WHITE() + text + getCL_RESET() + "' равен null.\n");
             Assertions.assertNull(object);
         } else {
-            logger.info("\nОбъект '" + getCL_WHITE() + text + getCL_RESET() + "' не равен null.\n");
+            System.out.println("\nОбъект '" + getCL_WHITE() + text + getCL_RESET() + "' не равен null.\n");
             Assertions.assertNotNull(object);
         }
     }
 
     public static void notNull (String text, List object) {
         if (object == null) {
-            logger.info("\nОбъект '" + getCL_WHITE() + text + getCL_RESET() + "' равен null.\n");
+            System.out.println("\nОбъект '" + getCL_WHITE() + text + getCL_RESET() + "' равен null.\n");
             Assertions.assertNull(object);
         } else {
-            logger.info("\nОбъект '" + getCL_WHITE() + text + getCL_RESET() + "' не равен null.\n");
+            System.out.println("\nОбъект '" + getCL_WHITE() + text + getCL_RESET() + "' не равен null.\n");
             Assertions.assertNotNull(object);
         }
     }
 
     public static void showLoggerInformation (String testName, Response response) {
-        logger.info("\nНазвание теста: " + getCL_WHITE() + testName + getCL_RESET() + ".\n"
+        System.out.println("\nНазвание теста: " + getCL_WHITE() + testName + getCL_RESET() + ".\n"
                 + "Статус код: " + getCL_WHITE() + response.statusCode() + getCL_RESET() + ".\n"
                 + "Время затраченное на получение ответа: " + getCL_YELLOW() + response.time() + getCL_RESET() + " ms.\n");
     }

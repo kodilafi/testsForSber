@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="updateMethods.putMethodTests.Update_PutTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-09-05T08:06:18" hostname="DESKTOP-FL91MBP" time="0.959">
+<testsuite name="updateMethods.putMethodTests.Update_PutTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-09-06T02:52:16" hostname="DESKTOP-FL91MBP" time="1.003">
   <properties/>
-  <testcase name="putTest_assertEqualsJob()" classname="updateMethods.putMethodTests.Update_PutTest" time="0.227"/>
-  <testcase name="putTest_assertNotNull()" classname="updateMethods.putMethodTests.Update_PutTest" time="0.259"/>
-  <testcase name="putTest_assertEqualsData()" classname="updateMethods.putMethodTests.Update_PutTest" time="0.222"/>
-  <testcase name="putTest_assertEqualsName()" classname="updateMethods.putMethodTests.Update_PutTest" time="0.251"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[[Test worker] INFO utilCollection.WriteLogger - 
+  <testcase name="putTest_assertEqualsJob()" classname="updateMethods.putMethodTests.Update_PutTest" time="0.257"/>
+  <testcase name="putTest_assertNotNull()" classname="updateMethods.putMethodTests.Update_PutTest" time="0.245"/>
+  <testcase name="putTest_assertEqualsData()" classname="updateMethods.putMethodTests.Update_PutTest" time="0.26"/>
+  <testcase name="putTest_assertEqualsName()" classname="updateMethods.putMethodTests.Update_PutTest" time="0.24"/>
+  <system-out><![CDATA[
 Название теста: ?[37mputTest?[0m.
 Статус код: ?[37m200?[0m.
-Время затраченное на получение ответа: ?[33m222?[0m ms.
+Время затраченное на получение ответа: ?[33m249?[0m ms.
 
-[Test worker] INFO utilCollection.WriteLogger - 
+
 Поле '?[37mName?[0m', введенное при создании: ?[33mzion resident?[0m, также '?[37mName?[0m' отображаемое в созданном пользователе: ?[33mzion resident?[0m.
 
-[Test worker] INFO utilCollection.WriteLogger - 
+
 Название теста: ?[37mputTest?[0m.
 Статус код: ?[37m200?[0m.
-Время затраченное на получение ответа: ?[33m254?[0m ms.
+Время затраченное на получение ответа: ?[33m240?[0m ms.
 
-[Test worker] INFO utilCollection.WriteLogger - 
+
 Объект '?[37mUpdateRequestPojo?[0m' не равен null.
 
-[Test worker] INFO utilCollection.WriteLogger - 
+
 Название теста: ?[37mputTest?[0m.
 Статус код: ?[37m200?[0m.
-Время затраченное на получение ответа: ?[33m214?[0m ms.
+Время затраченное на получение ответа: ?[33m253?[0m ms.
 
-[Test worker] INFO utilCollection.WriteLogger - 
-Сегодняшняя дата: ?[33m2024-09-05?[0m, ?[37mдата обновления пользователя?[0m: ?[33m2024-09-05?[0m.
 
-[Test worker] INFO utilCollection.WriteLogger - 
+Сегодняшняя дата: ?[33m2024-09-06?[0m, ?[37mдата обновления пользователя?[0m: ?[33m2024-09-06?[0m.
+
+
 Название теста: ?[37mputTest?[0m.
 Статус код: ?[37m200?[0m.
-Время затраченное на получение ответа: ?[33m246?[0m ms.
+Время затраченное на получение ответа: ?[33m235?[0m ms.
 
-[Test worker] INFO utilCollection.WriteLogger - 
+
 Поле '?[37mJob?[0m', введенное при создании: ?[33mzion resident?[0m, также '?[37mJob?[0m' отображаемое в созданном пользователе: ?[33mzion resident?[0m.
 
-]]></system-err>
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>

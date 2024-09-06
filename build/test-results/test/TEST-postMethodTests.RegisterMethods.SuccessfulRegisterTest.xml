@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="postMethodTests.RegisterMethods.SuccessfulRegisterTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-09-05T08:06:16" hostname="DESKTOP-FL91MBP" time="0.463">
+<testsuite name="postMethodTests.RegisterMethods.SuccessfulRegisterTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-09-06T02:52:14" hostname="DESKTOP-FL91MBP" time="0.582">
   <properties/>
-  <testcase name="postTest_assertEqualsToken()" classname="postMethodTests.RegisterMethods.SuccessfulRegisterTest" time="0.231"/>
-  <testcase name="postTest_assertEqualsId()" classname="postMethodTests.RegisterMethods.SuccessfulRegisterTest" time="0.231"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[[Test worker] INFO utilCollection.WriteLogger - 
+  <testcase name="postTest_assertEqualsToken()" classname="postMethodTests.RegisterMethods.SuccessfulRegisterTest" time="0.299"/>
+  <testcase name="postTest_assertEqualsId()" classname="postMethodTests.RegisterMethods.SuccessfulRegisterTest" time="0.282"/>
+  <system-out><![CDATA[
 Поле '?[37mtoken?[0m', введенное при создании: ?[33mQpwL5tke4Pnpja7X4?[0m, также '?[37mtoken?[0m' отображаемое в созданном пользователе: ?[33mQpwL5tke4Pnpja7X4?[0m.
 
-[Test worker] INFO utilCollection.WriteLogger - 
+
 Название теста: ?[37mpostTest_assertEqualsToken?[0m.
 Статус код: ?[37m200?[0m.
-Время затраченное на получение ответа: ?[33m220?[0m ms.
+Время затраченное на получение ответа: ?[33m288?[0m ms.
 
-[Test worker] INFO utilCollection.WriteLogger - 
+
 Поле '?[37mid?[0m', введенное при создании: ?[33m4?[0m, также '?[37mid?[0m' отображаемое в созданном пользователе: ?[33m4?[0m.
 
-[Test worker] INFO utilCollection.WriteLogger - 
+
 Название теста: ?[37mpostTest_assertEqualsId?[0m.
 Статус код: ?[37m200?[0m.
-Время затраченное на получение ответа: ?[33m218?[0m ms.
+Время затраченное на получение ответа: ?[33m275?[0m ms.
 
-]]></system-err>
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>
