@@ -1,41 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="updateMethods.patchMethodTests.Update_PatchTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-09-06T02:52:15" hostname="DESKTOP-FL91MBP" time="1.018">
+<testsuite name="updateMethods.patchMethodTests.Update_PatchTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-09-08T17:18:44" hostname="DESKTOP-FL91MBP" time="1.523">
   <properties/>
-  <testcase name="patchTest_assertNotNull()" classname="updateMethods.patchMethodTests.Update_PatchTest" time="0.282"/>
-  <testcase name="patchTest_assertEqualsJob()" classname="updateMethods.patchMethodTests.Update_PatchTest" time="0.23"/>
-  <testcase name="patchTest_assertEqualsDate()" classname="updateMethods.patchMethodTests.Update_PatchTest" time="0.259"/>
-  <testcase name="patchTest_assertEqualsName()" classname="updateMethods.patchMethodTests.Update_PatchTest" time="0.245"/>
-  <system-out><![CDATA[
-Название теста: ?[37mputTest?[0m.
-Статус код: ?[37m200?[0m.
-Время затраченное на получение ответа: ?[33m274?[0m ms.
+  <testcase name="patchTest_assertNotNull()" classname="updateMethods.patchMethodTests.Update_PatchTest" time="0.354"/>
+  <testcase name="patchTest_assertEqualsJob()" classname="updateMethods.patchMethodTests.Update_PatchTest" time="0.452"/>
+  <testcase name="patchTest_assertEqualsDate()" classname="updateMethods.patchMethodTests.Update_PatchTest" time="0.371"/>
+  <testcase name="patchTest_assertEqualsName()" classname="updateMethods.patchMethodTests.Update_PatchTest" time="0.345"/>
+  <system-out><![CDATA[2024-09-08 20:18:45 INFO  Update_PatchTest:34 - 
+Status Code: 200.
+Time for Response: 348 ms.
 
+2024-09-08 20:18:45 INFO  Update_PatchTest:41 - 
+Object 'UpdateRequestPojo' is not null.
 
-Объект '?[37mUpdateRequestPojo?[0m' не равен null.
+2024-09-08T17:18:45.195Z Test worker WARN The Logger updateMethods.patchMethodTests.Update_PatchTest was created with the message factory org.apache.logging.log4j.message.ReusableMessageFactory@7165d530 and is now requested with a null message factory (defaults to org.apache.logging.log4j.message.ParameterizedMessageFactory), which may create log events with unexpected formatting.
+2024-09-08 20:18:45 INFO  Update_PatchTest:34 - 
+Status Code: 200.
+Time for Response: 447 ms.
 
+2024-09-08 20:18:45 INFO  Update_PatchTest:48 - 
+Field 'Job', введенное при создании: zion resident, также 'Job' отображаемое в созданном пользователе: zion resident.
 
-Название теста: ?[37mputTest?[0m.
-Статус код: ?[37m200?[0m.
-Время затраченное на получение ответа: ?[33m225?[0m ms.
+2024-09-08T17:18:45.648Z Test worker WARN The Logger updateMethods.patchMethodTests.Update_PatchTest was created with the message factory org.apache.logging.log4j.message.ReusableMessageFactory@7165d530 and is now requested with a null message factory (defaults to org.apache.logging.log4j.message.ParameterizedMessageFactory), which may create log events with unexpected formatting.
+2024-09-08 20:18:46 INFO  Update_PatchTest:34 - 
+Status Code: 200.
+Time for Response: 365 ms.
 
+2024-09-08 20:18:46 INFO  Update_PatchTest:62 - 
+Сегодняшняя дата: 2024-09-08, дата обновления пользователя: 2024-09-08.
 
-Поле '?[37mJob?[0m', введенное при создании: ?[33mzion resident?[0m, также '?[37mJob?[0m' отображаемое в созданном пользователе: ?[33mzion resident?[0m.
+2024-09-08T17:18:46.018Z Test worker WARN The Logger updateMethods.patchMethodTests.Update_PatchTest was created with the message factory org.apache.logging.log4j.message.ReusableMessageFactory@7165d530 and is now requested with a null message factory (defaults to org.apache.logging.log4j.message.ParameterizedMessageFactory), which may create log events with unexpected formatting.
+2024-09-08 20:18:46 INFO  Update_PatchTest:34 - 
+Status Code: 200.
+Time for Response: 339 ms.
 
-
-Название теста: ?[37mputTest?[0m.
-Статус код: ?[37m200?[0m.
-Время затраченное на получение ответа: ?[33m255?[0m ms.
-
-
-Сегодняшняя дата: ?[33m2024-09-06?[0m, ?[37mдата обновления пользователя?[0m: ?[33m2024-09-06?[0m.
-
-
-Название теста: ?[37mputTest?[0m.
-Статус код: ?[37m200?[0m.
-Время затраченное на получение ответа: ?[33m238?[0m ms.
-
-
-Поле '?[37mName?[0m', введенное при создании: ?[33mzion resident?[0m, также '?[37mName?[0m' отображаемое в созданном пользователе: ?[33mzion resident?[0m.
+2024-09-08 20:18:46 INFO  Update_PatchTest:55 - 
+Field 'Name', введенное при создании: morpheus, также 'Name' отображаемое в созданном пользователе: morpheus.
 
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

@@ -1,41 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="updateMethods.putMethodTests.Update_PutTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-09-06T02:52:16" hostname="DESKTOP-FL91MBP" time="1.003">
+<testsuite name="updateMethods.putMethodTests.Update_PutTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-09-08T17:18:46" hostname="DESKTOP-FL91MBP" time="1.706">
   <properties/>
-  <testcase name="putTest_assertEqualsJob()" classname="updateMethods.putMethodTests.Update_PutTest" time="0.257"/>
-  <testcase name="putTest_assertNotNull()" classname="updateMethods.putMethodTests.Update_PutTest" time="0.245"/>
-  <testcase name="putTest_assertEqualsData()" classname="updateMethods.putMethodTests.Update_PutTest" time="0.26"/>
-  <testcase name="putTest_assertEqualsName()" classname="updateMethods.putMethodTests.Update_PutTest" time="0.24"/>
-  <system-out><![CDATA[
-Название теста: ?[37mputTest?[0m.
-Статус код: ?[37m200?[0m.
-Время затраченное на получение ответа: ?[33m249?[0m ms.
+  <testcase name="putTest_assertEqualsJob()" classname="updateMethods.putMethodTests.Update_PutTest" time="0.359"/>
+  <testcase name="putTest_assertNotNull()" classname="updateMethods.putMethodTests.Update_PutTest" time="0.352"/>
+  <testcase name="putTest_assertEqualsData()" classname="updateMethods.putMethodTests.Update_PutTest" time="0.623"/>
+  <testcase name="putTest_assertEqualsName()" classname="updateMethods.putMethodTests.Update_PutTest" time="0.372"/>
+  <system-out><![CDATA[2024-09-08 20:18:46 INFO  Update_PutTest:34 - 
+Status Code: 200.
+Time for Response: 352 ms.
 
+2024-09-08 20:18:46 INFO  Update_PutTest:55 - 
+Field 'Job', введенное при создании: zion resident, также 'Job' отображаемое в созданном пользователе: zion resident.
 
-Поле '?[37mName?[0m', введенное при создании: ?[33mzion resident?[0m, также '?[37mName?[0m' отображаемое в созданном пользователе: ?[33mzion resident?[0m.
+2024-09-08T17:18:46.722Z Test worker WARN The Logger updateMethods.putMethodTests.Update_PutTest was created with the message factory org.apache.logging.log4j.message.ReusableMessageFactory@7165d530 and is now requested with a null message factory (defaults to org.apache.logging.log4j.message.ParameterizedMessageFactory), which may create log events with unexpected formatting.
+2024-09-08 20:18:47 INFO  Update_PutTest:34 - 
+Status Code: 200.
+Time for Response: 347 ms.
 
+2024-09-08 20:18:47 INFO  Update_PutTest:41 - 
+Object 'UpdateRequestPojo' is not null.
 
-Название теста: ?[37mputTest?[0m.
-Статус код: ?[37m200?[0m.
-Время затраченное на получение ответа: ?[33m240?[0m ms.
+2024-09-08T17:18:47.074Z Test worker WARN The Logger updateMethods.putMethodTests.Update_PutTest was created with the message factory org.apache.logging.log4j.message.ReusableMessageFactory@7165d530 and is now requested with a null message factory (defaults to org.apache.logging.log4j.message.ParameterizedMessageFactory), which may create log events with unexpected formatting.
+2024-09-08 20:18:47 INFO  Update_PutTest:34 - 
+Status Code: 200.
+Time for Response: 616 ms.
 
+2024-09-08 20:18:47 INFO  Update_PutTest:62 - 
+Сегодняшняя дата: 2024-09-08, дата обновления пользователя: 2024-09-08.
 
-Объект '?[37mUpdateRequestPojo?[0m' не равен null.
+2024-09-08T17:18:47.699Z Test worker WARN The Logger updateMethods.putMethodTests.Update_PutTest was created with the message factory org.apache.logging.log4j.message.ReusableMessageFactory@7165d530 and is now requested with a null message factory (defaults to org.apache.logging.log4j.message.ParameterizedMessageFactory), which may create log events with unexpected formatting.
+2024-09-08 20:18:48 INFO  Update_PutTest:34 - 
+Status Code: 200.
+Time for Response: 365 ms.
 
-
-Название теста: ?[37mputTest?[0m.
-Статус код: ?[37m200?[0m.
-Время затраченное на получение ответа: ?[33m253?[0m ms.
-
-
-Сегодняшняя дата: ?[33m2024-09-06?[0m, ?[37mдата обновления пользователя?[0m: ?[33m2024-09-06?[0m.
-
-
-Название теста: ?[37mputTest?[0m.
-Статус код: ?[37m200?[0m.
-Время затраченное на получение ответа: ?[33m235?[0m ms.
-
-
-Поле '?[37mJob?[0m', введенное при создании: ?[33mzion resident?[0m, также '?[37mJob?[0m' отображаемое в созданном пользователе: ?[33mzion resident?[0m.
+2024-09-08 20:18:48 INFO  Update_PutTest:48 - 
+Field 'Name', введенное при создании: morpheus, также 'Name' отображаемое в созданном пользователе: morpheus.
 
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

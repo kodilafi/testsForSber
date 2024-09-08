@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="postMethodTests.RegisterMethods.UnsuccessfulRegisterTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-09-06T02:52:14" hostname="DESKTOP-FL91MBP" time="0.242">
+<testsuite name="postMethodTests.RegisterMethods.UnsuccessfulRegisterTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-09-08T17:18:44" hostname="DESKTOP-FL91MBP" time="0.34">
   <properties/>
-  <testcase name="postTest_assertEquals()" classname="postMethodTests.RegisterMethods.UnsuccessfulRegisterTests" time="0.242"/>
-  <system-out><![CDATA[
-Поле '?[37mmessage?[0m', введенное при создании: ?[33mMissing password?[0m, также '?[37mmessage?[0m' отображаемое в созданном пользователе: ?[33mMissing password?[0m.
+  <testcase name="postTest_assertEquals()" classname="postMethodTests.RegisterMethods.UnsuccessfulRegisterTests" time="0.34"/>
+  <system-out><![CDATA[2024-09-08 20:18:44 INFO  UnsuccessfulRegisterTests:35 - 
+Status Code: 400.
+Time for Response: 336 ms.
 
-
-Название теста: ?[37mpostTest_assertEquals?[0m.
-Статус код: ?[37m400?[0m.
-Время затраченное на получение ответа: ?[33m237?[0m ms.
+2024-09-08 20:18:44 INFO  UnsuccessfulRegisterTests:39 - 
+Field 'message', введенное при создании: Missing password, также 'message' отображаемое в созданном пользователе: Missing password.
 
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

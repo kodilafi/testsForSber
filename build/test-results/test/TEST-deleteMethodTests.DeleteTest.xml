@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="deleteMethodTests.DeleteTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-09-06T02:52:10" hostname="DESKTOP-FL91MBP" time="0.282">
+<testsuite name="deleteMethodTests.DeleteTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-09-08T17:18:37" hostname="DESKTOP-FL91MBP" time="0.357">
   <properties/>
-  <testcase name="deleteUser_test()" classname="deleteMethodTests.DeleteTest" time="0.282"/>
-  <system-out><![CDATA[
-Название теста: ?[37mdeleteTest?[0m.
-Статус код: ?[37m204?[0m.
-Время затраченное на получение ответа: ?[33m276?[0m ms.
+  <testcase name="deleteUser_test()" classname="deleteMethodTests.DeleteTest" time="0.357"/>
+  <system-out><![CDATA[2024-09-08 20:18:37 INFO  DeleteTest:24 - 
+Status Code: 204.
+Time for Response: 350 ms.
 
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

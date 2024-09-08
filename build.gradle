@@ -29,14 +29,20 @@ dependencies {
 
     testImplementation 'io.rest-assured:rest-assured:5.5.0'
 
-    testImplementation 'org.slf4j:slf4j-simple:2.0.13'
-    testImplementation 'ch.qos.logback:logback-classic:1.5.7'
+    testImplementation 'org.apache.logging.log4j:log4j-slf4j2-impl:2.24.0'
+    testImplementation 'org.apache.logging.log4j:log4j-core:2.24.0'
+    testImplementation 'org.apache.logging.log4j:log4j-api:2.24.0'
 }
 
 test {
     useJUnitPlatform()
     testLogging {
         events "passed", "skipped", "failed"
+        exceptionFormat = "full"
         showStandardStreams = true
+    }
+    reports {
+        junitXml.required.set(true)
+        html.required.set(true)
     }
 }

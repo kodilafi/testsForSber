@@ -1,6 +1,8 @@
 package postMethodTests.LoginMethods;
 
 import io.restassured.response.Response;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -9,16 +11,17 @@ import postMethodTests.ErrorPojo;
 import utilCollection.Specifications;
 
 import static io.restassured.RestAssured.given;
-import static utilCollection.WriteLogger.differenceField;
-import static utilCollection.WriteLogger.showLoggerInformation;
+import static utilCollection.WriteLogger.*;
 
 public class UnsuccessfulLoginTest {
+    Logger logger;
     Response response;
     EnterPojo request;
     ErrorPojo error;
 
     @BeforeEach
     public void UnsuccessfulLoginUser() {
+        logger = LogManager.getLogger(UnsuccessfulLoginTest.class);
         Specifications.InstallSpecification(400);
 
         request = new EnterPojo("peter@klaven", "");
@@ -29,8 +32,9 @@ public class UnsuccessfulLoginTest {
     //Тест_1: на вывод сообщения об ошибке.
     @Test
     public void postTest_assertEquals () {
+        logger.info(showLoggerInformation(response));
         Assertions.assertNotNull(error.getError());
-        differenceField("message", "Missing password", error.getError());
-        showLoggerInformation("postTest_assertEquals", response);
+        Assertions.assertEquals("Missing password", error.getError());
+        logger.info(differenceField("message", "Missing password", error.getError()));
     }
 }

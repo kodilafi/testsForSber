@@ -1,70 +1,69 @@
 package getMethodTests.Resources;
 
+import getMethodTests.Users.GetUserTest;
 import io.restassured.response.Response;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import utilCollection.Specifications;
 
 import java.util.List;
 
 import static io.restassured.RestAssured.given;
-import static utilCollection.WriteLogger.notNull;
-import static utilCollection.WriteLogger.showLoggerInformation;
+import static utilCollection.WriteLogger.*;
 
 public class GetResourceTest {
+    Logger logger;
     Response response;
     List<GetResourceRequestPojo> listOfResource;
     GetResourceRequestPojo singleResource;
 
+    @BeforeEach
+    public void SetUp() {
+        logger = LogManager.getLogger(GetUserTest.class);
+    }
+
     //Тест_1: на получение одного ресурса.
     @Test
     public void getSingleResource_assertNotNull () {
-        getSingleResource();
-        notNull("singleResource", singleResource);
-    }
-
-    //Тест_2: на получение списка ресурсов.
-    @Test
-    public void getListOfResource_assertNotNull () {
-        getListOfResource();
-        notNull("listOfResource", listOfResource);
-    }
-
-    //Тест_3: на попытку получить несуществующий ресурс.
-    @Test
-    public void getNotFoundResource_assertNull () {
-        getNotFoundResource();
-        notNull("singleResource", singleResource);
-    }
-
-
-
-
-
-    private void getSingleResource () {
         Specifications.InstallSpecification(200);
 
         response = given().when().get("api/unknown/2");
         singleResource = response.then().extract().jsonPath().getObject("data", GetResourceRequestPojo.class);
 
-        showLoggerInformation("getSingleResource", response);
+        logger.info(showLoggerInformation(response));
+
+        Assertions.assertNotNull(singleResource);
+        logger.info(isNull("singleResource", singleResource));
     }
 
-    private void getListOfResource () {
+    //Тест_2: на получение списка ресурсов.
+    @Test
+    public void getListOfResource_assertNotNull () {
         Specifications.InstallSpecification(200);
 
         response = given().when().get("api/unknown");
         listOfResource = response.then().extract().jsonPath().getList("data", GetResourceRequestPojo.class);
 
-        showLoggerInformation("getListOfResource", response);
+        logger.info(showLoggerInformation(response));
+
+        Assertions.assertNotNull(listOfResource);
+        logger.info(isNull("listOfResource", listOfResource));
     }
 
-    private void getNotFoundResource () {
+    //Тест_3: на попытку получить несуществующий ресурс.
+    @Test
+    public void getNotFoundResource_assertNull () {
         Specifications.InstallSpecification(404);
 
         response = given().when().get("api/unknown/23");
         singleResource = response.then().extract().jsonPath().getObject("data", GetResourceRequestPojo.class);
 
-        showLoggerInformation("getNotFoundResource", response);
+        logger.info(showLoggerInformation(response));
+
+        Assertions.assertNull(singleResource);
+        logger.info(isNull("singleResource", singleResource));
     }
 }
