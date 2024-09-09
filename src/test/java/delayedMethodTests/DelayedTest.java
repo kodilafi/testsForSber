@@ -11,13 +11,12 @@ import utilCollection.Specifications;
 import static utilCollection.WriteLogger.showLoggerInformation;
 
 public class DelayedTest {
-    Logger logger;
+    public static final Logger logger = LogManager.getLogger(DelayedTest.class);
     Response response;
 
     //Тест_1: на ожидание ответа.
     @Test
     public void delayedTest () {
-        logger = LogManager.getLogger(DelayedTest.class);
         Specifications.InstallSpecification(200);
 
         response = RestAssured.given().when().get("/api/users?delay=3");

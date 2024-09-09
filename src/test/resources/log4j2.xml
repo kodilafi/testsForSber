@@ -2,12 +2,14 @@
 <Configuration status="WARN">
     <Appenders>
         <Console name="Console" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" charset="UTF-8"/>
+            <PatternLayout charset="UTF-8" pattern="Data: %d{yyyy-MM-dd HH:mm:ss}, Level - %-5level: %nClass - %c.%n%msg %n"/>
         </Console>
-        <File name="FileLogger" fileName="logs/testForSber.log" append="false">
-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" charset="UTF-8"/>
+
+        <File name="FileLogger" fileName="logs/logs.log">
+            <PatternLayout charset="UTF-8" pattern="Data: %d{yyyy-MM-dd HH:mm:ss}, Level - %-5level: %nClass - %c.%n%msg %n"/>
         </File>
     </Appenders>
+
     <Loggers>
         <Root level="info">
             <AppenderRef ref="Console"/>

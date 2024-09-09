@@ -15,15 +15,10 @@ import static io.restassured.RestAssured.given;
 import static utilCollection.WriteLogger.*;
 
 public class GetResourceTest {
-    Logger logger;
+    public static final Logger logger = LogManager.getLogger(GetResourceTest.class);
     Response response;
     List<GetResourceRequestPojo> listOfResource;
     GetResourceRequestPojo singleResource;
-
-    @BeforeEach
-    public void SetUp() {
-        logger = LogManager.getLogger(GetUserTest.class);
-    }
 
     //Тест_1: на получение одного ресурса.
     @Test

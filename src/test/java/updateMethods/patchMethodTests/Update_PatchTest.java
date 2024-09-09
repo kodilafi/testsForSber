@@ -17,14 +17,13 @@ import static io.restassured.RestAssured.given;
 import static utilCollection.WriteLogger.*;
 
 public class Update_PatchTest {
-    Logger logger;
+    public static final Logger logger = LogManager.getLogger(Update_PatchTest.class);
     Response response;
     UpdateRequestPojo request;
     UpdateRepsonsePojo userAfter;
 
     @BeforeEach
     public void SetUp() {
-        logger = LogManager.getLogger(Update_PatchTest.class);
         Specifications.InstallSpecification(200);
 
         request = new UpdateRequestPojo("morpheus", "zion resident");
@@ -59,6 +58,6 @@ public class Update_PatchTest {
     @Test
     public void patchTest_assertEqualsDate() {
         Assertions.assertEquals(LocalDate.now().toString(), new SimpleDateFormat("yyyy-MM-dd").format(userAfter.getUpdatedAt()));
-        logger.info(differenceData("дата обновления пользователя", userAfter.getUpdatedAt()));
+        logger.info(differenceData(userAfter.getUpdatedAt()));
     }
 }

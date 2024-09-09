@@ -1,218 +1,0 @@
-,2024-09-08 20:18:37 INFO  DelayedTest:25 - 
-Status Code: 200.
-Time for Response: 3884 ms.
-
-+2024-09-08 20:18:37 INFO  DeleteTest:24 - 
-Status Code: 204.
-Time for Response: 350 ms.
-
-,2024-09-08 20:18:38 INFO  GetUserTest:50 - 
-Status Code: 200.
-Time for Response: 348 ms.
-
-,2024-09-08 20:18:38 INFO  GetUserTest:53 - 
-%Object 'listOfResource' is not null.
-
-�2024-09-08T17:18:38.638Z Test worker WARN The Logger getMethodTests.Users.GetUserTest was created with the message factory org.apache.logging.log4j.message.ReusableMessageFactory@7165d530 and is now requested with a null message factory (defaults to org.apache.logging.log4j.message.ParameterizedMessageFactory), which may create log events with unexpected formatting.
-,2024-09-08 20:18:39 INFO  GetUserTest:36 - 
-Status Code: 200.
-Time for Response: 597 ms.
-
-,2024-09-08 20:18:39 INFO  GetUserTest:39 - 
-%Object 'singleResource' is not null.
-
-�2024-09-08T17:18:39.250Z Test worker WARN The Logger getMethodTests.Users.GetUserTest was created with the message factory org.apache.logging.log4j.message.ReusableMessageFactory@7165d530 and is now requested with a null message factory (defaults to org.apache.logging.log4j.message.ParameterizedMessageFactory), which may create log events with unexpected formatting.
-,2024-09-08 20:18:39 INFO  GetUserTest:64 - 
-Status Code: 404.
-Time for Response: 433 ms.
-
-,2024-09-08 20:18:39 INFO  GetUserTest:67 - 
-!Object 'singleResource' is null.
-
-
-	�2024-09-08T17:18:39.696Z Test worker WARN The Logger getMethodTests.Users.GetUserTest was created with the message factory org.apache.logging.log4j.message.ReusableMessageFactory@7165d530 and is now requested with a null message factory (defaults to org.apache.logging.log4j.message.ParameterizedMessageFactory), which may create log events with unexpected formatting.
-
-	,2024-09-08 20:18:40 INFO  GetUserTest:49 - 
-
-	Status Code: 200.
-
-	Time for Response: 322 ms.
-
-	
-
-	,2024-09-08 20:18:40 INFO  GetUserTest:52 - 
-
-	!Object 'listOfUser' is not null.
-
-	
-
-�2024-09-08T17:18:40.038Z Test worker WARN The Logger getMethodTests.Users.GetUserTest was created with the message factory org.apache.logging.log4j.message.ReusableMessageFactory@7165d530 and is now requested with a null message factory (defaults to org.apache.logging.log4j.message.ParameterizedMessageFactory), which may create log events with unexpected formatting.
-
-,2024-09-08 20:18:40 INFO  GetUserTest:63 - 
-
-Status Code: 200.
-
-Time for Response: 171 ms.
-
-
-
-�2024-09-08T17:18:40.229Z Test worker WARN The Logger getMethodTests.Users.GetUserTest was created with the message factory org.apache.logging.log4j.message.ReusableMessageFactory@7165d530 and is now requested with a null message factory (defaults to org.apache.logging.log4j.message.ParameterizedMessageFactory), which may create log events with unexpected formatting.
-
-,2024-09-08 20:18:40 INFO  GetUserTest:35 - 
-
-Status Code: 200.
-
-Time for Response: 316 ms.
-
-
-
-,2024-09-08 20:18:40 INFO  GetUserTest:38 - 
-
-!Object 'singleUser' is not null.
-
-
-
-�2024-09-08T17:18:40.557Z Test worker WARN The Logger getMethodTests.Users.GetUserTest was created with the message factory org.apache.logging.log4j.message.ReusableMessageFactory@7165d530 and is now requested with a null message factory (defaults to org.apache.logging.log4j.message.ParameterizedMessageFactory), which may create log events with unexpected formatting.
-
-,2024-09-08 20:18:40 INFO  GetUserTest:75 - 
-
-Status Code: 404.
-
-Time for Response: 360 ms.
-
-
-
-,2024-09-08 20:18:40 INFO  GetUserTest:78 - 
-
-Object 'singleUser' is null.
-
-
-)2024-09-08 20:18:41 INFO  PostTest:54 - 
-Status Code: 201.
-Time for Response: 424 ms.
-
-)2024-09-08 20:18:41 INFO  PostTest:57 - 
-�Field 'Job', введенное при создании: leader, также 'Job' отображаемое в созданном пользователе: leader.
-
-�2024-09-08T17:18:41.435Z Test worker WARN The Logger postMethodTests.CreateMethods.PostTest was created with the message factory org.apache.logging.log4j.message.ReusableMessageFactory@7165d530 and is now requested with a null message factory (defaults to org.apache.logging.log4j.message.ParameterizedMessageFactory), which may create log events with unexpected formatting.
-)2024-09-08 20:18:41 INFO  PostTest:63 - 
-Status Code: 201.
-Time for Response: 317 ms.
-
-)2024-09-08 20:18:41 INFO  PostTest:66 - 
-mСегодняшняя дата: 2024-09-08, дата создания пользователя: 2024-09-08.
-
-�2024-09-08T17:18:41.760Z Test worker WARN The Logger postMethodTests.CreateMethods.PostTest was created with the message factory org.apache.logging.log4j.message.ReusableMessageFactory@7165d530 and is now requested with a null message factory (defaults to org.apache.logging.log4j.message.ParameterizedMessageFactory), which may create log events with unexpected formatting.
-)2024-09-08 20:18:42 INFO  PostTest:45 - 
-Status Code: 201.
-Time for Response: 386 ms.
-
-)2024-09-08 20:18:42 INFO  PostTest:48 - 
-�Field 'Name', введенное при создании: morpheus, также 'Name' отображаемое в созданном пользователе: morpheus.
-
-�2024-09-08T17:18:42.152Z Test worker WARN The Logger postMethodTests.CreateMethods.PostTest was created with the message factory org.apache.logging.log4j.message.ReusableMessageFactory@7165d530 and is now requested with a null message factory (defaults to org.apache.logging.log4j.message.ParameterizedMessageFactory), which may create log events with unexpected formatting.
-)2024-09-08 20:18:42 INFO  PostTest:36 - 
-Status Code: 201.
-Time for Response: 602 ms.
-
-)2024-09-08 20:18:42 INFO  PostTest:39 - 
-#Object 'userResponse' is not null.
-
-52024-09-08 20:18:43 INFO  SuccessfulLoginTests:36 - 
-Status Code: 200.
-Time for Response: 361 ms.
-
-52024-09-08 20:18:43 INFO  SuccessfulLoginTests:39 - 
-�Field 'token', введенное при создании: QpwL5tke4Pnpja7X4, также 'token' отображаемое в созданном пользователе: QpwL5tke4Pnpja7X4.
-
-62024-09-08 20:18:43 INFO  UnsuccessfulLoginTest:35 - 
-Status Code: 400.
-Time for Response: 565 ms.
-
-62024-09-08 20:18:43 INFO  UnsuccessfulLoginTest:38 - 
-�Field 'message', введенное при создании: Missing password, также 'message' отображаемое в созданном пользователе: Missing password.
-
-72024-09-08 20:18:44 INFO  SuccessfulRegisterTest:47 - 
-Status Code: 200.
-Time for Response: 353 ms.
-
-72024-09-08 20:18:44 INFO  SuccessfulRegisterTest:50 - 
-�Field 'token', введенное при создании: QpwL5tke4Pnpja7X4, также 'token' отображаемое в созданном пользователе: QpwL5tke4Pnpja7X4.
-
-�2024-09-08T17:18:44.075Z Test worker WARN The Logger postMethodTests.RegisterMethods.SuccessfulRegisterTest was created with the message factory org.apache.logging.log4j.message.ReusableMessageFactory@7165d530 and is now requested with a null message factory (defaults to org.apache.logging.log4j.message.ParameterizedMessageFactory), which may create log events with unexpected formatting.
-72024-09-08 20:18:44 INFO  SuccessfulRegisterTest:36 - 
-Status Code: 200.
-Time for Response: 409 ms.
-
-72024-09-08 20:18:44 INFO  SuccessfulRegisterTest:39 - 
-�Field 'id', введенное при создании: 4, также 'id' отображаемое в созданном пользователе: 4.
-
-:2024-09-08 20:18:44 INFO  UnsuccessfulRegisterTests:35 - 
-Status Code: 400.
-Time for Response: 336 ms.
-
-:2024-09-08 20:18:44 INFO  UnsuccessfulRegisterTests:39 - 
-�Field 'message', введенное при создании: Missing password, также 'message' отображаемое в созданном пользователе: Missing password.
-
-12024-09-08 20:18:45 INFO  Update_PatchTest:34 - 
-Status Code: 200.
-Time for Response: 348 ms.
-
-12024-09-08 20:18:45 INFO  Update_PatchTest:41 - 
-(Object 'UpdateRequestPojo' is not null.
-
-�2024-09-08T17:18:45.195Z Test worker WARN The Logger updateMethods.patchMethodTests.Update_PatchTest was created with the message factory org.apache.logging.log4j.message.ReusableMessageFactory@7165d530 and is now requested with a null message factory (defaults to org.apache.logging.log4j.message.ParameterizedMessageFactory), which may create log events with unexpected formatting.
-12024-09-08 20:18:45 INFO  Update_PatchTest:34 - 
-Status Code: 200.
-Time for Response: 447 ms.
-
-12024-09-08 20:18:45 INFO  Update_PatchTest:48 - 
-�Field 'Job', введенное при создании: zion resident, также 'Job' отображаемое в созданном пользователе: zion resident.
-
-�2024-09-08T17:18:45.648Z Test worker WARN The Logger updateMethods.patchMethodTests.Update_PatchTest was created with the message factory org.apache.logging.log4j.message.ReusableMessageFactory@7165d530 and is now requested with a null message factory (defaults to org.apache.logging.log4j.message.ParameterizedMessageFactory), which may create log events with unexpected formatting.
-12024-09-08 20:18:46 INFO  Update_PatchTest:34 - 
-Status Code: 200.
-Time for Response: 365 ms.
-
-12024-09-08 20:18:46 INFO  Update_PatchTest:62 - 
-qСегодняшняя дата: 2024-09-08, дата обновления пользователя: 2024-09-08.
-
- �2024-09-08T17:18:46.018Z Test worker WARN The Logger updateMethods.patchMethodTests.Update_PatchTest was created with the message factory org.apache.logging.log4j.message.ReusableMessageFactory@7165d530 and is now requested with a null message factory (defaults to org.apache.logging.log4j.message.ParameterizedMessageFactory), which may create log events with unexpected formatting.
- 12024-09-08 20:18:46 INFO  Update_PatchTest:34 - 
- Status Code: 200.
- Time for Response: 339 ms.
- 
- 12024-09-08 20:18:46 INFO  Update_PatchTest:55 - 
- �Field 'Name', введенное при создании: morpheus, также 'Name' отображаемое в созданном пользователе: morpheus.
- 
-"!/2024-09-08 20:18:46 INFO  Update_PutTest:34 - 
-"!Status Code: 200.
-"!Time for Response: 352 ms.
-"!
-"!/2024-09-08 20:18:46 INFO  Update_PutTest:55 - 
-"!�Field 'Job', введенное при создании: zion resident, также 'Job' отображаемое в созданном пользователе: zion resident.
-"!
-"#�2024-09-08T17:18:46.722Z Test worker WARN The Logger updateMethods.putMethodTests.Update_PutTest was created with the message factory org.apache.logging.log4j.message.ReusableMessageFactory@7165d530 and is now requested with a null message factory (defaults to org.apache.logging.log4j.message.ParameterizedMessageFactory), which may create log events with unexpected formatting.
-"#/2024-09-08 20:18:47 INFO  Update_PutTest:34 - 
-"#Status Code: 200.
-"#Time for Response: 347 ms.
-"#
-"#/2024-09-08 20:18:47 INFO  Update_PutTest:41 - 
-"#(Object 'UpdateRequestPojo' is not null.
-"#
-"$�2024-09-08T17:18:47.074Z Test worker WARN The Logger updateMethods.putMethodTests.Update_PutTest was created with the message factory org.apache.logging.log4j.message.ReusableMessageFactory@7165d530 and is now requested with a null message factory (defaults to org.apache.logging.log4j.message.ParameterizedMessageFactory), which may create log events with unexpected formatting.
-"$/2024-09-08 20:18:47 INFO  Update_PutTest:34 - 
-"$Status Code: 200.
-"$Time for Response: 616 ms.
-"$
-"$/2024-09-08 20:18:47 INFO  Update_PutTest:62 - 
-"$qСегодняшняя дата: 2024-09-08, дата обновления пользователя: 2024-09-08.
-"$
-"%�2024-09-08T17:18:47.699Z Test worker WARN The Logger updateMethods.putMethodTests.Update_PutTest was created with the message factory org.apache.logging.log4j.message.ReusableMessageFactory@7165d530 and is now requested with a null message factory (defaults to org.apache.logging.log4j.message.ParameterizedMessageFactory), which may create log events with unexpected formatting.
-"%/2024-09-08 20:18:48 INFO  Update_PutTest:34 - 
-"%Status Code: 200.
-"%Time for Response: 365 ms.
-"%
-"%/2024-09-08 20:18:48 INFO  Update_PutTest:48 - 
-"%�Field 'Name', введенное при создании: morpheus, также 'Name' отображаемое в созданном пользователе: morpheus.
-"%

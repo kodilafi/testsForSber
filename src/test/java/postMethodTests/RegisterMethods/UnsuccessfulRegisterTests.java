@@ -14,14 +14,13 @@ import static io.restassured.RestAssured.given;
 import static utilCollection.WriteLogger.*;
 
 public class UnsuccessfulRegisterTests {
-    Logger logger;
+    public static final Logger logger = LogManager.getLogger(UnsuccessfulRegisterTests.class);
     Response response;
     EnterPojo request;
     ErrorPojo error;
 
     @BeforeEach
     public void SetUp() {
-        logger = LogManager.getLogger(UnsuccessfulRegisterTests.class);
         Specifications.InstallSpecification(400);
 
         request = new EnterPojo("sydney@fife", "");

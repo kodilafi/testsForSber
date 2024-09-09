@@ -2,51 +2,81 @@ package utilCollection;
 
 import io.restassured.response.Response;
 
+import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 
-import static utilCollection.ConstantForTests.*;
-
 public class WriteLogger {
     public static String differenceField (String checkField, String except, String actual) {
-        return "\nField '" + checkField
-                + "', введенное при создании: " + except
-                + ", также '" + checkField + "' отображаемое в созданном пользователе: "
-                + actual + ".\n";
+        StringBuilder res = new StringBuilder("Field '")
+                .append(checkField)
+                .append("', excepted: ")
+                .append(except)
+                .append(", and actual: ")
+                .append(actual)
+                .append(".\n");
+
+        return res.toString();
     }
 
     public static String differenceField (String checkField, int except, int actual) {
-        return "\nField '" + checkField
-                + "', введенное при создании: " + except
-                + ", также '" + checkField + "' отображаемое в созданном пользователе: "
-                + actual + ".\n";
+        StringBuilder res = new StringBuilder("Field '")
+                .append(checkField)
+                .append("', excepted: ")
+                .append(except)
+                .append(", and actual: ")
+                .append(actual)
+                .append(".\n");
+
+        return res.toString();
     }
 
-    public static String differenceData (String text, Date data) {
-        return "\nСегодняшняя дата: " + LocalDate.now() + ", "
-                + text + ": "
-                + new SimpleDateFormat("yyyy-MM-dd").format(data) + ".\n";
+    public static String differenceData (Date data) {
+        StringBuilder res = new StringBuilder("Real date: ")
+                .append(LocalDate.now())
+                .append(", response Date : ")
+                .append(new SimpleDateFormat("yyyy-MM-dd").format(data))
+                .append(".\n");
+
+        return res.toString();
     }
 
     public static String isNull(String text, Object object) {
+        StringBuilder res = new StringBuilder("Object '")
+                .append(text);
+
         if (object == null) {
-            return "\nObject '" + text + "' is null.\n";
+            return res.append("' is null.\n").toString();
         } else {
-            return "\nObject '" + text + "' is not null.\n";
+            return res.append("' is not null.\n").toString();
         }
     }
 
-    public static String isNull(String text, List object) {
-        if (object == null)
-            return "\nObject '" + text + "' is null.\n";
-        else
-            return "\nObject '" + text + "' is not null.\n";
+    public static String isNull(String text, List list) {
+        StringBuilder res = new StringBuilder("List '")
+                .append(text);
+
+        if (list == null) {
+            return res.append("' is null.\n").toString();
+        } else {
+            return res.append("' is not null.\n").toString();
+        }
     }
 
     public static String showLoggerInformation (Response response) {
-        return "\nStatus Code: " + response.statusCode() + ".\n"
-                + "Time for Response: " + response.time() + " ms.\n";
+        StringBuilder res = new StringBuilder("Status Code: ")
+                .append(response.statusCode())
+                .append(".\nTime for Response: ")
+                .append(response.time())
+                .append(" ms.\n");
+
+        return res.toString();
+    }
+
+    private static String byteConvert (String str) {
+        byte[] bytes = str.getBytes(StandardCharsets.UTF_8);
+        return new String(bytes, StandardCharsets.UTF_8);
     }
 }

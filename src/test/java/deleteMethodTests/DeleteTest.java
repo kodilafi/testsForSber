@@ -10,13 +10,12 @@ import static io.restassured.RestAssured.given;
 import static utilCollection.WriteLogger.showLoggerInformation;
 
 public class DeleteTest {
-    Logger logger;
+    public static final Logger logger = LogManager.getLogger(DeleteTest.class);
     Response response;
 
     //Тест_1: на удаление пользователя.
     @Test
     public void deleteUser_test() {
-        logger = LogManager.getLogger(DeleteTest.class);
         Specifications.InstallSpecification(204);
 
         response = given().when().delete("api/users/2");

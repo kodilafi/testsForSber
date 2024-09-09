@@ -14,15 +14,10 @@ import static io.restassured.RestAssured.given;
 import static utilCollection.WriteLogger.*;
 
 public class GetUserTest {
-    Logger logger;
+    public static final Logger logger = LogManager.getLogger(GetUserTest.class);
     Response response;
     List<GetUserResponsePojo> listOfUser;
     GetUserResponsePojo singleUser;
-
-    @BeforeEach
-    public void SetUp() {
-        logger = LogManager.getLogger(GetUserTest.class);
-    }
 
     //Тест_1: на получение одного пользователя.
     @Test

@@ -15,14 +15,14 @@ import static io.restassured.RestAssured.given;
 import static utilCollection.WriteLogger.*;
 
 public class PostTest {
-    Logger logger;
+    public static final Logger logger = LogManager.getLogger(PostTest.class);
     CreateRequestPojo userRequest;
     CreateResponsePojo userResponse;
     Response response;
 
     @BeforeEach
     public void SetUp() {
-        logger = LogManager.getLogger(PostTest.class);
+
         Specifications.InstallSpecification(201);
 
         userRequest = new CreateRequestPojo("morpheus", "leader");
@@ -63,6 +63,6 @@ public class PostTest {
         logger.info(showLoggerInformation(response));
 
         Assertions.assertEquals(LocalDate.now().toString(), new SimpleDateFormat("yyyy-MM-dd").format(userResponse.getCreatedAt()));
-        logger.info(differenceData("дата создания пользователя", userResponse.getCreatedAt()));
+        logger.info(differenceData(userResponse.getCreatedAt()));
     }
 }
